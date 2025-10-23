@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vision & Hearing Screening of Austin</title>
+    <meta name="description" content="Contact Vision & Hearing Screening of Austin to schedule your school's health screenings. Serving Austin area schools since 2003.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-poppins font-bold text-2xl text-[#4A90E2]">
+                        VHSA
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">For Schools</a>
+                        <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        <a href="contact.html" class="text-[#1E3A8A] font-medium px-3 py-2 rounded-md text-sm">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-[#2C3E50] hover:text-[#4A90E2] focus:outline-none focus:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg">
+            <div class="px-4 pt-5 pb-6 space-y-1">
+                <div class="flex items-center justify-between">
+                    <div class="font-poppins font-bold text-xl text-[#4A90E2]">VHSA</div>
+                    <button id="close-mobile-menu" class="text-[#2C3E50] hover:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 space-y-1">
+                    <a href="index.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="for-schools.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
+                    <a href="about.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="contact.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-poppins font-bold text-4xl lg:text-5xl text-white mb-6">
+                Get in Touch
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Ready to schedule your school's health screenings? We're here to help make the process easy and stress-free.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Information -->
+    <section class="py-16 bg-gradient-to-r from-white to-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+                <!-- Contact Form -->
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="font-poppins font-bold text-3xl text-[#2C3E50] mb-6">Send Us a Message</h2>
+                    <p class="text-gray-600 mb-8">
+                        Fill out the form below and we'll get back to you within 24 hours to discuss your school's screening needs.
+                    </p>
+                    
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+                        <!-- Honeypot field -->
+                        <div class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="school-name" class="block text-sm font-medium text-gray-700 mb-2">School Name *</label>
+                                <input type="text" id="school-name" name="school-name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                       placeholder="Your school name">
+                            </div>
+                            <div>
+                                <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-2">Contact Name *</label>
+                                <input type="text" id="contact-name" name="contact-name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                       placeholder="Your full name">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                       placeholder="your.email@school.edu">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                       placeholder="(512) 555-0123">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="enrollment" class="block text-sm font-medium text-gray-700 mb-2">Approximate Enrollment</label>
+                            <select id="enrollment" name="enrollment" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors">
+                                <option value="">Select enrollment range</option>
+                                <option value="under-100">Under 100 students</option>
+                                <option value="100-300">100-300 students</option>
+                                <option value="300-500">300-500 students</option>
+                                <option value="500-800">500-800 students</option>
+                                <option value="800-1200">800-1,200 students</option>
+                                <option value="over-1200">Over 1,200 students</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="grades" class="block text-sm font-medium text-gray-700 mb-2">Grade Levels Needing Screening</label>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="pre-k" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">Pre-K</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="k" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">Kindergarten</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="1st" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">1st Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="2nd" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">2nd Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="3rd" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">3rd Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="4th" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">4th Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="5th" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">5th Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="6th" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">6th Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="7th" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">7th Grade</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="grades" value="8th" class="rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                                    <span class="text-sm text-gray-700">8th Grade</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="preferred-dates" class="block text-sm font-medium text-gray-700 mb-2">Preferred Screening Dates</label>
+                            <input type="text" id="preferred-dates" name="preferred-dates" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                   placeholder="e.g., Week of March 15th, or specific dates">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message / Questions</label>
+                            <textarea id="message" name="message" rows="5" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors"
+                                      placeholder="Tell us about your school's specific needs, any questions you have, or special requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="font-poppins font-bold text-3xl text-[#2C3E50] mb-6">Contact Information</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-[#FDFBF7] rounded-xl p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-[#2C3E50] mb-4">Get in Touch</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-[#2C3E50]">Phone</p>
+                                        <p class="text-gray-600">(512) XXX-XXXX</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-[#2C3E50]">Email</p>
+                                        <p class="text-gray-600">info@vhsaustin.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-[#2C3E50]">Business Hours</p>
+                                        <p class="text-gray-600">Monday-Friday, 8am-5pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-[#FDFBF7] rounded-xl p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-[#2C3E50] mb-4">Service Area</h3>
+                            <p class="text-gray-600 mb-4">
+                                We proudly serve schools throughout the greater Austin metropolitan area and surrounding communities.
+                            </p>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                <div class="space-y-1">
+                                    <p class="text-gray-700">• Austin</p>
+                                    <p class="text-gray-700">• Round Rock</p>
+                                    <p class="text-gray-700">• Cedar Park</p>
+                                    <p class="text-gray-700">• Georgetown</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-gray-700">• Pflugerville</p>
+                                    <p class="text-gray-700">• Leander</p>
+                                    <p class="text-gray-700">• Lakeway</p>
+                                    <p class="text-gray-700">• And more</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-[#FDFBF7] rounded-xl p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-[#2C3E50] mb-4">Response Time</h3>
+                            <p class="text-gray-600">
+                                We typically respond to all inquiries within 24 hours during business days. 
+                                For urgent requests, please call us directly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="font-poppins font-bold text-3xl text-[#2C3E50] mb-4">Find Us</h2>
+                <p class="text-lg text-gray-600">
+                    We're located in the heart of Austin, serving schools throughout the greater metropolitan area.
+                </p>
+            </div>
+            
+            <div class="placeholder-image w-full h-96 rounded-xl">
+                <span class="text-lg">Google Map - Add Real Map Embed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-gradient py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-white mb-6">
+                Prefer to Talk?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Call us at (512) XXX-XXXX for immediate assistance or to discuss your school's specific needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:512-XXX-XXXX" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                    Call Now
+                </a>
+                <a href="for-schools.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all">
+                    Learn More About Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Message -->
+    <section class="py-8 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">
+                For all other inquiries, email us at <a href="mailto:info@vhsaustin.com" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium">info@vhsaustin.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-poppins font-bold text-xl mb-4">Vision & Hearing Screening of Austin</h3>
+                    <p class="text-gray-300 mb-4">
+                        Serving Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas since 2008.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📞 (512) XXX-XXXX</p>
+                        <p class="text-gray-300">✉️ info@vhsaustin.com</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="for-schools.html" class="block text-gray-300 hover:text-white transition-colors">For Schools</a>
+                        <a href="about.html" class="block text-gray-300 hover:text-white transition-colors">About Us</a>
+                        <a href="contact.html" class="block text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Vision & Hearing Screening of Austin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenuOverlay = document.createElement('div');
+        
+        mobileMenuOverlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-40 hidden';
+        document.body.appendChild(mobileMenuOverlay);
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.remove('open');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenuFunc);
+        
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+    </script>
+
+    <!-- Form Enhancement JavaScript -->
+    <script>
+        // Add form validation and enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form[name="contact"]');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // Basic validation
+                    const requiredFields = form.querySelectorAll('[required]');
+                    let isValid = true;
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.classList.add('border-red-500');
+                        } else {
+                            field.classList.remove('border-red-500');
+                        }
+                    });
+                    
+                    if (!isValid) {
+                        e.preventDefault();
+                        alert('Please fill in all required fields.');
+                    }
+                });
+                
+                // Remove error styling on input
+                form.querySelectorAll('input, textarea, select').forEach(field => {
+                    field.addEventListener('input', function() {
+                        this.classList.remove('border-red-500');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

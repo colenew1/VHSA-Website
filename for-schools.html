@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services for Schools - Vision & Hearing Screening of Austin</title>
+    <meta name="description" content="Comprehensive school health screening services meeting Texas state requirements. Vision, hearing, scoliosis, and acanthosis screening for all grade levels.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-poppins font-bold text-2xl text-[#4A90E2]">
+                        VHSA
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="for-schools.html" class="text-[#1E3A8A] font-medium px-3 py-2 rounded-md text-sm">For Schools</a>
+                        <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-[#2C3E50] hover:text-[#4A90E2] focus:outline-none focus:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg">
+            <div class="px-4 pt-5 pb-6 space-y-1">
+                <div class="flex items-center justify-between">
+                    <div class="font-poppins font-bold text-xl text-[#4A90E2]">VHSA</div>
+                    <button id="close-mobile-menu" class="text-[#2C3E50] hover:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 space-y-1">
+                    <a href="index.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="for-schools.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
+                    <a href="about.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="contact.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-poppins font-bold text-4xl lg:text-5xl text-white mb-6">
+                Services for Schools
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Comprehensive health screening services that meet Texas state requirements and keep your students healthy and thriving.
+            </p>
+            <a href="contact.html" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift inline-block">
+                Request a Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Texas Law Requirements -->
+    <section class="py-16 bg-gradient-to-r from-white to-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">What's Required by Texas Law</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Understanding the screening requirements for each grade level helps ensure your school stays compliant.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-[#4A90E2]">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-white">Grade Level</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-white">Vision</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-white">Hearing</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-white">Acanthosis</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-white">Scoliosis</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">Pre-K (4)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ If turned 4 by Sept 1</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">Kindergarten</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">1st Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">2nd Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">3rd Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">4th Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">5th Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Girls/Other</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">6th Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">❌ Not required</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">7th Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Girls/Other</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">8th Grade</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Girls/Other</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-yellow-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#2C3E50]">New Students</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">✅ Required</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mt-8 p-6 bg-blue-50 rounded-xl">
+                <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">Important Notes:</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start space-x-2">
+                        <span class="text-[#4A90E2] mt-1">•</span>
+                        <span>New students at any grade level must complete all required screenings for their grade</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <span class="text-[#4A90E2] mt-1">•</span>
+                        <span>Scoliosis screening is required for girls and students who identify as other genders in 5th, 7th, and 8th grades</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <span class="text-[#4A90E2] mt-1">•</span>
+                        <span>All screenings must be completed by state-certified professionals</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-16 bg-gradient-to-r from-blue-100 to-yellow-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">Our Process</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    From initial contact to final reporting, we make the entire screening process smooth and efficient.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">Initial Contact</h3>
+                    <p class="text-gray-600 text-sm">You reach out to us with your screening needs and preferred dates</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">Schedule</h3>
+                    <p class="text-gray-600 text-sm">We coordinate with your calendar and provide a detailed timeline</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">Screening Day</h3>
+                    <p class="text-gray-600 text-sm">Our team arrives with all equipment and conducts screenings efficiently</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">Results Delivery</h3>
+                    <p class="text-gray-600 text-sm">Parents receive individual results, schools get comprehensive reports</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">5</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-[#2C3E50] mb-3">State Reporting</h3>
+                    <p class="text-gray-600 text-sm">We handle all required state compliance documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Quotes -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#2C3E50] mb-6">Pricing & Quotes</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Every school is unique, with different enrollment numbers, grade levels, and specific requirements. 
+                We provide custom quotes based on your school's specific needs to ensure you get the best value.
+            </p>
+            
+            <div class="bg-[#FDFBF7] rounded-xl p-8 mb-8">
+                <h3 class="font-poppins font-semibold text-xl text-[#2C3E50] mb-4">What We Consider:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">Total enrollment numbers</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">Grade levels requiring screening</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">Types of screenings needed</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">School location and travel time</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">Preferred scheduling dates</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-[#4A90E2] rounded-full"></div>
+                            <span class="text-gray-700">Reporting requirements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="contact.html" class="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift inline-block">
+                Request a Custom Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#2C3E50] mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">
+                    Common questions from school administrators about our screening services.
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">How long does screening take?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Most schools are completed in 1-2 days, depending on enrollment size. We work efficiently to minimize classroom disruption, 
+                            typically screening 15-20 students per hour. We coordinate with your schedule to ensure minimal impact on instructional time.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">What space do we need to provide?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            We need a quiet room with electrical outlets for our equipment. This could be a library, conference room, or empty classroom. 
+                            We bring all necessary equipment and materials. The space should be large enough to accommodate our screening stations and allow for privacy during sensitive screenings.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">When do parents receive results?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Parents typically receive results within 2-3 business days after screening completion. Results are sent directly to parents 
+                            via mail or email (based on your school's preference). We also provide the school with a comprehensive summary report for their records.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">What happens if a student fails a screening?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            When a student doesn't pass a screening, we provide detailed information to parents about the results and recommend follow-up 
+                            with appropriate healthcare providers. We also notify the school nurse and provide guidance on next steps. Our goal is early detection and intervention.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">Do you handle state reporting?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Yes! We handle all required state reporting and compliance documentation. This includes submitting screening results to the 
+                            Texas Department of State Health Services and providing your school with the necessary documentation to maintain compliance with state requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-poppins font-semibold text-lg text-[#2C3E50]">Are your staff members certified?</h3>
+                        <svg class="faq-icon w-5 h-5 text-[#4A90E2] transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Absolutely. All our screening professionals are state-certified and undergo regular training to maintain their credentials. 
+                            We stay current with Texas state requirements and best practices in school health screening to ensure accurate and reliable results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-gradient py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-white mb-6">
+                Ready to Schedule Your School's Screening?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Let's work together to keep your students healthy and compliant
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                    Request a Quote
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-poppins font-bold text-xl mb-4">Vision & Hearing Screening of Austin</h3>
+                    <p class="text-gray-300 mb-4">
+                        Serving Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas since 2008.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📞 (512) XXX-XXXX</p>
+                        <p class="text-gray-300">✉️ info@vhsaustin.com</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="for-schools.html" class="block text-gray-300 hover:text-white transition-colors">For Schools</a>
+                        <a href="about.html" class="block text-gray-300 hover:text-white transition-colors">About Us</a>
+                        <a href="contact.html" class="block text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Vision & Hearing Screening of Austin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenuOverlay = document.createElement('div');
+        
+        mobileMenuOverlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-40 hidden';
+        document.body.appendChild(mobileMenuOverlay);
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.remove('open');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenuFunc);
+        
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+    </script>
+
+    <!-- FAQ JavaScript -->
+    <script>
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
