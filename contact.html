@@ -24,7 +24,7 @@
 </head>
 <body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-blue-50 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -40,6 +40,24 @@
                         <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
                         <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">For Schools</a>
                         <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors flex items-center">
+                                Resources
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="blog.html" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Blog</a>
+                                    <a href="about.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
+                                    <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <a href="contact.html" class="text-[#1E3A8A] font-medium px-3 py-2 rounded-md text-sm">Contact</a>
                     </div>
                 </div>
@@ -67,9 +85,20 @@
                     </button>
                 </div>
                 <div class="mt-6 space-y-1">
-                    <a href="index.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="for-schools.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
-                    <a href="about.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
+                    <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    
+                    <!-- Mobile Resources Section -->
+                    <div class="px-3 py-2">
+                        <div class="text-[#1E3A8A] font-medium text-base mb-2">Resources</div>
+                        <div class="ml-4 space-y-1">
+                            <a href="blog.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Blog</a>
+                            <a href="about.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
+                            <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
+                        </div>
+                    </div>
+                    
                     <a href="contact.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
@@ -210,9 +239,26 @@
                         </div>
                         
                         <button type="submit" 
-                                class="w-full bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
-                            Send Message
+                                class="w-full bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                            Get Your Custom Quote
                         </button>
+                        
+                        <!-- Success Message (hidden by default) -->
+                        <div id="success-message" class="hidden bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-sm font-medium text-green-800">Thank you!</h3>
+                                    <div class="mt-2 text-sm text-green-700">
+                                        <p>We've received your request and will respond within 24 hours with your custom quote.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 
@@ -369,9 +415,9 @@
                 <div>
                     <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
                     <div class="space-y-2">
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                        <a href="about.html#faq" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="about.html#privacy-policy" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="about.html#service-area" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
                     </div>
                 </div>
             </div>
@@ -447,6 +493,22 @@
                     field.addEventListener('input', function() {
                         this.classList.remove('border-red-500');
                     });
+                });
+                
+                // Handle successful form submission
+                form.addEventListener('submit', function(e) {
+                    // Check if this is a Netlify form submission
+                    if (form.checkValidity()) {
+                        // Show success message after a short delay
+                        setTimeout(function() {
+                            const successMessage = document.getElementById('success-message');
+                            if (successMessage) {
+                                successMessage.classList.remove('hidden');
+                                form.style.display = 'none';
+                                successMessage.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }, 1000);
+                    }
                 });
             }
         });

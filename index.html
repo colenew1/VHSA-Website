@@ -22,9 +22,9 @@
         .font-inter { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
+<body class="font-inter bg-white text-[#1E3A8A]">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-blue-50 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -40,6 +40,24 @@
                         <a href="index.html" class="text-[#1E3A8A] font-medium px-3 py-2 rounded-md text-sm">Home</a>
                         <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">For Schools</a>
                         <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors flex items-center">
+                                Resources
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="blog.html" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Blog</a>
+                                    <a href="about.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
+                                    <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
                     </div>
                 </div>
@@ -70,6 +88,17 @@
                     <a href="index.html" class="text-[#1E3A8A] block px-3 py-2 rounded-md text-base font-medium">Home</a>
                     <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
                     <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    
+                    <!-- Mobile Resources Section -->
+                    <div class="px-3 py-2">
+                        <div class="text-[#1E3A8A] font-medium text-base mb-2">Resources</div>
+                        <div class="ml-4 space-y-1">
+                            <a href="blog.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Blog</a>
+                            <a href="about.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
+                            <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
+                        </div>
+                    </div>
+                    
                     <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
@@ -82,21 +111,21 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
                 <div class="mb-8 lg:mb-0">
                     <h1 class="font-poppins font-bold text-4xl lg:text-5xl text-white mb-6">
-                        Professional School Health Screenings
+                        Professional School Health Screenings for Austin Area Schools
                     </h1>
                     <p class="text-xl text-blue-100 mb-4">
-                        Trusted by Austin Families Since 2008
+                        Led by Erin Newman, PPCNP-BC - Board-certified Pediatric Primary Care Nurse Practitioner
                     </p>
                     <p class="text-lg text-blue-50 mb-8 leading-relaxed">
-                        We make screening day easy, efficient, and fun for kids. Over 15 years of experience serving 150+ local schools.
+                        We make Texas compliance simple, efficient, and stress-free for administrators while ensuring accurate, professional results for every student. 15+ years serving Austin schools.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="contact.html" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift text-center">
-                            Schedule Screening
+                            Get Your Custom Quote
                         </a>
-                        <a href="for-schools.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all text-center">
-                            Learn More
-                        </a>
+                            <a href="about.html#process" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all text-center">
+                                Learn About Our Process
+                            </a>
                     </div>
                 </div>
                 <div class="lg:ml-8">
@@ -107,35 +136,35 @@
     </section>
 
     <!-- Trust Indicators -->
-    <section class="py-16 bg-gradient-to-r from-yellow-100 to-blue-100">
+    <section class="py-16 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
                     <div class="text-3xl mb-3">⭐⭐⭐⭐⭐</div>
                     <h3 class="font-poppins font-semibold text-lg text-[#1E3A8A] mb-2">15+ Years Experience</h3>
-                    <p class="text-sm text-gray-600">Trusted by Austin families since 2008</p>
+                    <p class="text-sm text-gray-600">Trusted by Austin schools since 2008</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
                     <div class="text-3xl mb-3">🏫</div>
                     <h3 class="font-poppins font-semibold text-lg text-[#1E3A8A] mb-2">150+ Schools Served</h3>
                     <p class="text-sm text-gray-600">Across the greater Austin area</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-blue-50 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
                     <div class="text-3xl mb-3">👥</div>
                     <h3 class="font-poppins font-semibold text-lg text-[#1E3A8A] mb-2">20,000+ Students Screened</h3>
                     <p class="text-sm text-gray-600">Making a difference in children's health</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-yellow-50 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift">
                     <div class="text-3xl mb-3">🏆</div>
-                    <h3 class="font-poppins font-semibold text-lg text-[#1E3A8A] mb-2">State Certified Professionals</h3>
-                    <p class="text-sm text-gray-600">Licensed and experienced team</p>
+                    <h3 class="font-poppins font-semibold text-lg text-[#1E3A8A] mb-2">PPCNP-BC Certified</h3>
+                    <p class="text-sm text-gray-600">Board-certified Pediatric Nurse Practitioner</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-16 bg-gradient-to-br from-yellow-50 to-blue-50">
+    <section class="py-16 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">Our Services</h2>
@@ -146,9 +175,9 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Vision Screening -->
-                <div class="bg-gradient-to-br from-white to-yellow-50 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden">
-                    <div class="placeholder-image h-48 w-full">
-                        <span class="text-lg">Vision Screening Icon</span>
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-48 w-full bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                        <span class="text-lg text-gray-600">Vision Screening Icon</span>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
@@ -162,9 +191,9 @@
                 </div>
 
                 <!-- Hearing Screening -->
-                <div class="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden">
-                    <div class="placeholder-image h-48 w-full">
-                        <span class="text-lg">Hearing Screening Icon</span>
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-48 w-full bg-gradient-to-br from-yellow-100 to-blue-100 flex items-center justify-center">
+                        <span class="text-lg text-gray-600">Hearing Screening Icon</span>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
@@ -178,9 +207,9 @@
                 </div>
 
                 <!-- Scoliosis Screening -->
-                <div class="bg-gradient-to-br from-yellow-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden">
-                    <div class="placeholder-image h-48 w-full">
-                        <span class="text-lg">Scoliosis Screening Icon</span>
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-48 w-full bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                        <span class="text-lg text-gray-600">Scoliosis Screening Icon</span>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
@@ -194,9 +223,9 @@
                 </div>
 
                 <!-- Acanthosis Screening -->
-                <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden">
-                    <div class="placeholder-image h-48 w-full">
-                        <span class="text-lg">Acanthosis Screening Icon</span>
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-48 w-full bg-gradient-to-br from-yellow-100 to-blue-100 flex items-center justify-center">
+                        <span class="text-lg text-gray-600">Acanthosis Screening Icon</span>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
@@ -213,7 +242,7 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-16 bg-gradient-to-r from-blue-100 to-yellow-100">
+    <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">Why Schools Choose VHSA</h2>
@@ -270,7 +299,7 @@
     </section>
 
     <!-- How It Works -->
-    <section class="py-16 bg-gradient-to-br from-yellow-50 to-blue-50">
+    <section class="py-16 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">How It Works</h2>
@@ -315,21 +344,83 @@
         </div>
     </section>
 
+    <!-- Blog Preview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">Resources & Insights</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Expert guidance on school health screening compliance and best practices.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                        <div class="placeholder-image h-48 w-full bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                            <span class="text-gray-500">Blog Image</span>
+                        </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">The Role of PPCNP-BC Professionals in School Health</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Why board certification matters when choosing your school health screening provider. Learn about the specialized expertise that sets certified professionals apart.
+                        </p>
+                        <a href="blog-post-1.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                        <div class="placeholder-image h-48 w-full bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                            <span class="text-gray-500">Blog Image</span>
+                        </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">Texas Health Screening Compliance Guide 2025</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Everything Austin school administrators need to know about legal requirements, deadlines, and reporting to stay compliant and avoid penalties.
+                        </p>
+                        <a href="blog-post-2.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                        <div class="placeholder-image h-48 w-full bg-gradient-to-br from-blue-100 to-yellow-100 flex items-center justify-center">
+                            <span class="text-gray-500">Blog Image</span>
+                        </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">Preparing Students for Health Screening Day</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            A practical guide for educators on how to prepare students, communicate with parents, and ensure a smooth screening experience for everyone.
+                        </p>
+                        <a href="blog-post-3.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="blog.html" class="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift inline-block">
+                    View All Resources
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action -->
     <section class="cta-gradient py-16">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-white mb-6">
-                Ready to Schedule Your School's Screening?
+                Ready to Get Your Custom Quote?
             </h2>
             <p class="text-xl text-blue-100 mb-8">
-                Let's make screening day easy and stress-free
+                Get a personalized quote for your school's health screening needs. We'll respond within 24 hours.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="contact.html" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
-                    Schedule Now
+                    Get Your Quote
                 </a>
-                <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all">
-                    Request a Quote
+                <a href="about.html#process" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all">
+                    Learn More
                 </a>
             </div>
         </div>
@@ -362,9 +453,9 @@
                 <div>
                     <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
                     <div class="space-y-2">
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                        <a href="about.html#faq" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="about.html#privacy-policy" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="about.html#service-area" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
                     </div>
                 </div>
             </div>
@@ -374,6 +465,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- Blog Popup Banner -->
+    <div id="blog-popup" class="fixed bottom-4 right-4 bg-gradient-to-r from-[#FFB84D] to-[#FFA726] text-white p-6 rounded-xl shadow-2xl max-w-sm z-50 transform translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="flex items-start justify-between">
+            <div class="flex-1">
+                <h3 class="font-poppins font-bold text-lg mb-2">📚 Expert Insight</h3>
+                <p class="text-sm mb-3 leading-relaxed">
+                    Discover why board-certified professionals make the difference in school health screenings.
+                </p>
+                <a href="blog-post-1.html" class="bg-white text-[#FFB84D] font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition-colors inline-block">
+                    Read Article →
+                </a>
+            </div>
+            <button id="close-popup" class="ml-3 text-white hover:text-gray-200 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <!-- Mobile Menu JavaScript -->
     <script>
@@ -406,6 +517,30 @@
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', closeMobileMenuFunc);
         });
+        
+        // Blog Popup Banner
+        const blogPopup = document.getElementById('blog-popup');
+        const closePopup = document.getElementById('close-popup');
+        
+        // Show popup after 3 seconds
+        setTimeout(() => {
+            if (!localStorage.getItem('blog-popup-closed')) {
+                blogPopup.classList.remove('translate-x-full');
+            }
+        }, 3000);
+        
+        // Close popup functionality
+        closePopup.addEventListener('click', () => {
+            blogPopup.classList.add('translate-x-full');
+            localStorage.setItem('blog-popup-closed', 'true');
+        });
+        
+        // Auto-hide after 10 seconds if not closed
+        setTimeout(() => {
+            if (!blogPopup.classList.contains('translate-x-full')) {
+                blogPopup.classList.add('translate-x-full');
+            }
+        }, 13000);
     </script>
 </body>
 </html>

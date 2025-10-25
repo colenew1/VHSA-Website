@@ -24,7 +24,7 @@
 </head>
 <body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-blue-50 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -40,6 +40,24 @@
                         <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
                         <a href="for-schools.html" class="text-[#1E3A8A] font-medium px-3 py-2 rounded-md text-sm">For Schools</a>
                         <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors flex items-center">
+                                Resources
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="blog.html" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Blog</a>
+                                    <a href="about.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
+                                    <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
                     </div>
                 </div>
@@ -67,10 +85,21 @@
                     </button>
                 </div>
                 <div class="mt-6 space-y-1">
-                    <a href="index.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
                     <a href="for-schools.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
-                    <a href="about.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="contact.html" class="text-[#2C3E50] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    
+                    <!-- Mobile Resources Section -->
+                    <div class="px-3 py-2">
+                        <div class="text-[#1E3A8A] font-medium text-base mb-2">Resources</div>
+                        <div class="ml-4 space-y-1">
+                            <a href="blog.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Blog</a>
+                            <a href="about.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
+                            <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
         </div>
@@ -92,7 +121,7 @@
     </section>
 
     <!-- Texas Law Requirements -->
-    <section class="py-16 bg-gradient-to-r from-white to-yellow-50">
+    <section id="requirements" class="py-16 bg-gradient-to-r from-white to-yellow-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-4">What's Required by Texas Law</h2>
@@ -470,9 +499,9 @@
                 <div>
                     <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
                     <div class="space-y-2">
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                        <a href="about.html#faq" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="about.html#privacy-policy" class="block text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="about.html#service-area" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
                     </div>
                 </div>
             </div>
@@ -532,6 +561,20 @@
                 }
             });
         });
+        
+        // FAQ Toggle Function
+        function toggleFAQ(faqId) {
+            const content = document.getElementById(faqId + '-content');
+            const icon = document.getElementById(faqId + '-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     </script>
 </body>
 </html>

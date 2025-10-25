@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Insights - Vision & Hearing Screening of Austin</title>
+    <meta name="description" content="Expert guidance on school health screening compliance, best practices, and insights from Austin's leading PPCNP-BC certified screening professionals.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter bg-white text-[#1E3A8A]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-poppins font-bold text-2xl text-[#4A90E2]">
+                        VHSA
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">For Schools</a>
+                        <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors flex items-center">
+                                Resources
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="blog.html" class="block px-4 py-2 text-sm text-[#4A90E2] font-medium">Blog</a>
+                                    <a href="for-schools.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
+                                    <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-[#1E3A8A] hover:text-[#4A90E2] focus:outline-none focus:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg">
+            <div class="px-4 pt-5 pb-6 space-y-1">
+                <div class="flex items-center justify-between">
+                    <div class="font-poppins font-bold text-xl text-[#4A90E2]">VHSA</div>
+                    <button id="close-mobile-menu" class="text-[#1E3A8A] hover:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 space-y-1">
+                    <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
+                    <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    
+                    <!-- Mobile Resources Section -->
+                    <div class="px-3 py-2">
+                        <div class="text-[#4A90E2] font-medium text-base mb-2">Resources</div>
+                        <div class="ml-4 space-y-1">
+                            <a href="blog.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                            <a href="for-schools.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
+                            <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-poppins font-bold text-4xl lg:text-5xl text-white mb-6">
+                Resources & Insights
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Expert guidance on school health screening compliance, best practices, and insights from Austin's leading PPCNP-BC certified screening professionals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-64 w-full bg-gray-100 flex items-center justify-center">
+                        <span class="text-gray-500">Blog Image</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium mr-3">Thought Leadership</span>
+                            <span>January 15, 2025</span>
+                        </div>
+                        <h2 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">The Role of PPCNP-BC Professionals in School Health</h2>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Why board certification matters when choosing your school health screening provider. Learn about the specialized expertise that sets certified professionals apart and how it benefits your students.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>By Erin Newman, PPCNP-BC</span>
+                            </div>
+                            <a href="blog-post-1.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-64 w-full bg-gray-100 flex items-center justify-center">
+                        <span class="text-gray-500">Blog Image</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium mr-3">Compliance</span>
+                            <span>January 10, 2025</span>
+                        </div>
+                        <h2 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">Texas Health Screening Compliance Guide 2025</h2>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Everything Austin school administrators need to know about legal requirements, deadlines, and reporting to stay compliant and avoid penalties. Updated for 2025 regulations.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>By Erin Newman, PPCNP-BC</span>
+                            </div>
+                            <a href="blog-post-2.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover-lift overflow-hidden border border-gray-100">
+                    <div class="placeholder-image h-64 w-full bg-gray-100 flex items-center justify-center">
+                        <span class="text-gray-500">Blog Image</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium mr-3">Best Practices</span>
+                            <span>January 5, 2025</span>
+                        </div>
+                        <h2 class="font-poppins font-semibold text-xl text-[#1E3A8A] mb-3">Preparing Students for Health Screening Day</h2>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            A practical guide for educators on how to prepare students, communicate with parents, and ensure a smooth screening experience for everyone involved.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>By Erin Newman, PPCNP-BC</span>
+                            </div>
+                            <a href="blog-post-3.html" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-50">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-[#1E3A8A] mb-6">
+                Need Help With Your School's Health Screenings?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Get expert guidance and a custom quote for your school's screening needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                    Get Your Quote
+                </a>
+                <a href="for-schools.html" class="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                    Learn About Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-poppins font-bold text-xl mb-4">Vision & Hearing Screening of Austin</h3>
+                    <p class="text-gray-300 mb-4">
+                        Serving Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas since 2008.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📞 (512) XXX-XXXX</p>
+                        <p class="text-gray-300">✉️ info@vhsaustin.com</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="for-schools.html" class="block text-gray-300 hover:text-white transition-colors">For Schools</a>
+                        <a href="about.html" class="block text-gray-300 hover:text-white transition-colors">About Us</a>
+                        <a href="contact.html" class="block text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <a href="blog.html" class="block text-gray-300 hover:text-white transition-colors">Blog</a>
+                        <a href="for-schools.html#faq" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="for-schools.html#requirements" class="block text-gray-300 hover:text-white transition-colors">Texas Requirements</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Vision & Hearing Screening of Austin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenuOverlay = document.createElement('div');
+        
+        mobileMenuOverlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-40 hidden';
+        document.body.appendChild(mobileMenuOverlay);
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.remove('open');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenuFunc);
+        
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+    </script>
+</body>
+</html>
