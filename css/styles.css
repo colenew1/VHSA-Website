@@ -3,7 +3,7 @@
 
 /* Custom gradient backgrounds */
 .hero-gradient {
-    background: linear-gradient(135deg, #4A90E2 0%, #6BB6FF 100%);
+    background: linear-gradient(135deg, #facc15 0%, #93c5fd 50%, #3b82f6 100%);
 }
 
 .cta-gradient {
