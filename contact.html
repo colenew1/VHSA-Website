@@ -51,7 +51,6 @@
                             </button>
                             <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                                 <div class="py-1">
-                                    <a href="blog.html" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Blog</a>
                                     <a href="about.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
                                     <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
                                 </div>
@@ -93,7 +92,6 @@
                     <div class="px-3 py-2">
                         <div class="text-[#1E3A8A] font-medium text-base mb-2">Resources</div>
                         <div class="ml-4 space-y-1">
-                            <a href="blog.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Blog</a>
                             <a href="about.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
                             <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
                         </div>
@@ -179,6 +177,38 @@
                         </div>
                         
                         <div>
+                            <label for="number-screened" class="block text-sm font-medium text-gray-700 mb-2">Approximate Number to be Screened</label>
+                            <select id="number-screened" name="number-screened" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors">
+                                <option value="">Select number range</option>
+                                <option value="under-25">Under 25 students</option>
+                                <option value="25-50">25-50 students</option>
+                                <option value="50-100">50-100 students</option>
+                                <option value="100-200">100-200 students</option>
+                                <option value="200-300">200-300 students</option>
+                                <option value="300-500">300-500 students</option>
+                                <option value="500-plus">500+ students</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="billing-entity" class="block text-sm font-medium text-gray-700 mb-2">Billing Entity</label>
+                            <select id="billing-entity" name="billing-entity" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent transition-colors">
+                                <option value="">Select billing entity</option>
+                                <option value="school">School</option>
+                                <option value="parents">Parents</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <div class="mb-3">
+                                <button type="button" id="select-all-grades" 
+                                        class="text-sm text-[#4A90E2] hover:text-[#3A7BC8] font-medium underline">
+                                    Select All Grades
+                                </button>
+                            </div>
                             <label for="grades" class="block text-sm font-medium text-gray-700 mb-2">Grade Levels Needing Screening</label>
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                                 <label class="flex items-center space-x-2">
@@ -273,25 +303,13 @@
                                 <div class="flex items-center space-x-3">
                                     <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-[#2C3E50]">Phone</p>
-                                        <p class="text-gray-600">(512) XXX-XXXX</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
-                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                         </svg>
                                     </div>
                                     <div>
                                         <p class="font-medium text-[#2C3E50]">Email</p>
-                                        <p class="text-gray-600">info@vhsaustin.com</p>
+                                        <p class="text-gray-600">screenaustin@gmail.com</p>
                                     </div>
                                 </div>
                                 
@@ -314,18 +332,28 @@
                             <p class="text-gray-600 mb-4">
                                 We proudly serve schools throughout the greater Austin metropolitan area and surrounding communities.
                             </p>
-                            <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
                                 <div class="space-y-1">
                                     <p class="text-gray-700">• Austin</p>
                                     <p class="text-gray-700">• Round Rock</p>
                                     <p class="text-gray-700">• Cedar Park</p>
                                     <p class="text-gray-700">• Georgetown</p>
+                                    <p class="text-gray-700">• Pflugerville</p>
                                 </div>
                                 <div class="space-y-1">
-                                    <p class="text-gray-700">• Pflugerville</p>
                                     <p class="text-gray-700">• Leander</p>
                                     <p class="text-gray-700">• Lakeway</p>
-                                    <p class="text-gray-700">• And more</p>
+                                    <p class="text-gray-700">• Bee Cave</p>
+                                    <p class="text-gray-700">• Bastrop</p>
+                                    <p class="text-gray-700">• Elgin</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-gray-700">• Hutto</p>
+                                    <p class="text-gray-700">• Dripping Springs</p>
+                                    <p class="text-gray-700">• Kyle</p>
+                                    <p class="text-gray-700">• Buda</p>
+                                    <p class="text-gray-700">• Manor</p>
+                                    <p class="text-gray-700">• And surrounding areas</p>
                                 </div>
                             </div>
                         </div>
@@ -333,8 +361,7 @@
                         <div class="bg-[#FDFBF7] rounded-xl p-6">
                             <h3 class="font-poppins font-semibold text-xl text-[#2C3E50] mb-4">Response Time</h3>
                             <p class="text-gray-600">
-                                We typically respond to all inquiries within 24 hours during business days. 
-                                For urgent requests, please call us directly.
+                                We typically respond to all inquiries within one business day.
                             </p>
                         </div>
                     </div>
@@ -343,35 +370,16 @@
         </div>
     </section>
 
-    <!-- Map Placeholder -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h2 class="font-poppins font-bold text-3xl text-[#2C3E50] mb-4">Find Us</h2>
-                <p class="text-lg text-gray-600">
-                    We're located in the heart of Austin, serving schools throughout the greater metropolitan area.
-                </p>
-            </div>
-            
-            <div class="placeholder-image w-full h-96 rounded-xl">
-                <span class="text-lg">Google Map - Add Real Map Embed</span>
-            </div>
-        </div>
-    </section>
-
     <!-- Call to Action -->
     <section class="cta-gradient py-16">
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 class="font-poppins font-bold text-3xl lg:text-4xl text-white mb-6">
-                Prefer to Talk?
+                Learn More About Our Services
             </h2>
             <p class="text-xl text-blue-100 mb-8">
-                Call us at (512) XXX-XXXX for immediate assistance or to discuss your school's specific needs.
+                Discover how we can help your school meet state health screening requirements.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:512-XXX-XXXX" class="bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
-                    Call Now
-                </a>
                 <a href="for-schools.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#4A90E2] font-semibold py-3 px-8 rounded-lg transition-all">
                     Learn More About Our Services
                 </a>
@@ -383,7 +391,7 @@
     <section class="py-8 bg-gray-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-gray-600">
-                For all other inquiries, email us at <a href="mailto:info@vhsaustin.com" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium">info@vhsaustin.com</a>
+                For all other inquiries, email us at <a href="mailto:screenaustin@gmail.com" class="text-[#4A90E2] hover:text-[#3A7BC8] font-medium">screenaustin@gmail.com</a>
             </p>
         </div>
     </section>
@@ -395,11 +403,10 @@
                 <div>
                     <h3 class="font-poppins font-bold text-xl mb-4">Vision & Hearing Screening of Austin</h3>
                     <p class="text-gray-300 mb-4">
-                        Serving Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas since 2008.
+                        Providing professional school health screenings throughout Central Texas
                     </p>
                     <div class="space-y-2">
-                        <p class="text-gray-300">📞 (512) XXX-XXXX</p>
-                        <p class="text-gray-300">✉️ info@vhsaustin.com</p>
+                        <p class="text-gray-300">✉️ screenaustin@gmail.com</p>
                     </div>
                 </div>
                 
@@ -459,6 +466,22 @@
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', closeMobileMenuFunc);
         });
+        
+        // Select All Grades functionality
+        const selectAllBtn = document.getElementById('select-all-grades');
+        const gradeCheckboxes = document.querySelectorAll('input[name="grades"]');
+        
+        if (selectAllBtn && gradeCheckboxes.length > 0) {
+            selectAllBtn.addEventListener('click', function() {
+                const allChecked = Array.from(gradeCheckboxes).every(cb => cb.checked);
+                
+                gradeCheckboxes.forEach(checkbox => {
+                    checkbox.checked = !allChecked;
+                });
+                
+                selectAllBtn.textContent = allChecked ? 'Select All Grades' : 'Deselect All Grades';
+            });
+        }
     </script>
 
     <!-- Form Enhancement JavaScript -->
