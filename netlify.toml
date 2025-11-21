@@ -1,0 +1,15 @@
+# Netlify configuration file
+# This configures form notifications and other site settings
+
+[[forms]]
+  name = "contact"
+  
+  # Email notification settings
+  [[forms.notifications]]
+    to = "erin@screenaustin.com"
+    subject = "New Contact Form Submission from VHSA Website"
+    from = "noreply@your-netlify-site.netlify.app"
+    
+    # Optional: Customize the email body
+    # body = "You have a new form submission from your website."
+
