@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Vision & Hearing Screening of Austin</title>
+    <meta name="description" content="Thank you for contacting Vision & Hearing Screening of Austin. We'll get back to you within two business days.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter bg-gradient-to-br from-blue-50 to-yellow-50 text-[#1E3A8A]">
+    <!-- Navigation -->
+    <nav class="bg-blue-50 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-poppins font-bold text-2xl text-[#4A90E2]">
+                        VHSA
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">For Schools</a>
+                        <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                        
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors flex items-center">
+                                Resources
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="about.html#faq" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">FAQ</a>
+                                    <a href="for-schools.html#requirements" class="block px-4 py-2 text-sm text-[#1E3A8A] hover:bg-blue-50 hover:text-[#4A90E2]">Texas Requirements</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="text-[#1E3A8A] hover:text-[#4A90E2] px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-[#2C3E50] hover:text-[#4A90E2] focus:outline-none focus:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg">
+            <div class="px-4 pt-5 pb-6 space-y-1">
+                <div class="flex items-center justify-between">
+                    <div class="font-poppins font-bold text-xl text-[#4A90E2]">VHSA</div>
+                    <button id="close-mobile-menu" class="text-[#2C3E50] hover:text-[#4A90E2]">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 space-y-1">
+                    <a href="index.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="for-schools.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">For Schools</a>
+                    <a href="about.html" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    
+                    <!-- Mobile Resources Section -->
+                    <div class="px-3 py-2">
+                        <div class="text-[#1E3A8A] font-medium text-base mb-2">Resources</div>
+                        <div class="ml-4 space-y-1">
+                            <a href="about.html#faq" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">FAQ</a>
+                            <a href="for-schools.html#requirements" class="text-[#1E3A8A] hover:text-[#4A90E2] block px-3 py-2 rounded-md text-sm">Texas Requirements</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-[#4A90E2] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <section class="hero-gradient py-16 lg:py-24" style="background: linear-gradient(135deg, #DBEAFE 0%, #E0F2FE 50%, #FEF3C7 100%);">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+                <!-- Success Icon -->
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-12 h-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                
+                <h1 class="font-poppins font-bold text-4xl lg:text-5xl text-[#1E3A8A] mb-6">
+                    Thank You!
+                </h1>
+                
+                <p class="text-xl text-[#2C3E50] mb-8 leading-relaxed">
+                    We've received your message and will get back to you within <strong>two business days</strong>.
+                </p>
+                
+                <p class="text-lg text-gray-600 mb-10">
+                    Our team is reviewing your request and will contact you soon to discuss your school's screening needs.
+                </p>
+                
+                <a href="index.html" 
+                   class="inline-block bg-[#FFB84D] hover:bg-[#FFA726] text-white font-semibold py-3 px-8 rounded-lg transition-all hover-lift">
+                    Return to Home Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-poppins font-bold text-xl mb-4">Vision & Hearing Screening of Austin</h3>
+                    <p class="text-gray-300 mb-4">
+                        Providing professional school health screenings throughout Central Texas
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">
+                            ✉️ 
+                            <a href="mailto:erin@screenaustin.com?subject=School%20Screening%20Inquiry" 
+                               class="text-gray-300 hover:text-white transition-colors">
+                                erin@screenaustin.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="for-schools.html" class="block text-gray-300 hover:text-white transition-colors">For Schools</a>
+                        <a href="about.html" class="block text-gray-300 hover:text-white transition-colors">About Us</a>
+                        <a href="contact.html" class="block text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <a href="about.html#faq" class="block text-gray-300 hover:text-white transition-colors">FAQ</a>
+                        <a href="about.html#service-area" class="block text-gray-300 hover:text-white transition-colors">Service Area</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Vision & Hearing Screening of Austin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenuOverlay = document.createElement('div');
+        
+        mobileMenuOverlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-40 hidden';
+        document.body.appendChild(mobileMenuOverlay);
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.remove('open');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenuFunc);
+        
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+    </script>
+</body>
+</html>
+

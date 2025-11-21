@@ -126,7 +126,7 @@
                         Fill out the form below and we'll get back to you within 24 hours to discuss your school's screening needs.
                     </p>
                     
-                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+                    <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
                         <!-- Honeypot field -->
                         <div class="hidden">
                             <label>Don't fill this out if you're human: <input name="bot-field" /></label>
@@ -525,22 +525,6 @@
                     field.addEventListener('input', function() {
                         this.classList.remove('border-red-500');
                     });
-                });
-                
-                // Handle successful form submission
-                form.addEventListener('submit', function(e) {
-                    // Check if this is a Netlify form submission
-                    if (form.checkValidity()) {
-                        // Show success message after a short delay
-                        setTimeout(function() {
-                            const successMessage = document.getElementById('success-message');
-                            if (successMessage) {
-                                successMessage.classList.remove('hidden');
-                                form.style.display = 'none';
-                                successMessage.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }, 1000);
-                    }
                 });
             }
         });
